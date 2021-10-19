@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane minHeight="800.0" minWidth="1280.0" prefHeight="800.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.code.controllers.CongratsScreenController">
+   <Pane fx:id="motherPane" minHeight="800.0" minWidth="1280.0" prefHeight="800.0" prefWidth="1280.0">
+         <children>
+            <Label layoutX="210.0" layoutY="303.0" style="-fx-text-fill: purple;" text="축하합니다 당신의 점수는...">
+               <font>
+                  <Font size="64.0" />
+               </font>
+            </Label>
+            <Label fx:id="finalScore" layoutX="603.0" layoutY="400.0" style="-fx-text-fill: gold;" text="0">
+               <font>
+                  <Font size="120.0" />
+               </font>
+            </Label>
+            <Label layoutX="169.0" layoutY="530.0" style="-fx-text-fill: chocolate;" styleClass="inputLabel" text="블록 숫자">
+               <font>
+                  <Font name="Bradley Hand Bold" size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="220.0" layoutY="571.0" style="-fx-text-fill: chocolate;" styleClass="inputLabel" text="시간">
+               <font>
+                  <Font name="Bradley Hand Bold" size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="31.0" layoutY="617.0" style="-fx-text-fill: chocolate;" styleClass="inputLabel" text="블록 움직이는 속도">
+               <font>
+                  <Font name="Bradley Hand Bold" size="24.0" />
+               </font>
+            </Label>
+            <TextField fx:id="newNumOfBlocks" layoutX="279.0" layoutY="534.0" style="-fx-background-color: deepskyblue; -fx-background-radius: 20;" />
+            <TextField fx:id="newTime" layoutX="279.0" layoutY="575.0" style="-fx-background-color: deepskyblue; -fx-background-radius: 20;" />
+            <TextField fx:id="newSpeed" layoutX="279.0" layoutY="621.0" style="-fx-background-color: deepskyblue; -fx-background-radius: 20;" />
+            <Button layoutX="203.0" layoutY="678.0" mnemonicParsing="false" onAction="#playAgain" style="-fx-background-color: green; -fx-border-style: dotted; -fx-border-width: 3px; -fx-border-color: lime;" text="다시 하기">
+               <font>
+                  <Font name="Marker Felt Thin" size="24.0" />
+               </font>
+            </Button>
+            <Label layoutX="446.0" layoutY="635.0" text="일초에">
+               <font>
+                  <Font name="Bradley Hand Bold" size="13.0" />
+               </font>
+            </Label>
+         <Label fx:id="prototypeBlock" disable="true" layoutX="625.0" layoutY="392.0" minHeight="60.0" minWidth="60.0" prefHeight="60.0" prefWidth="60.0" style="-fx-background-color: red;" text=" : )" textAlignment="JUSTIFY" visible="false">
+            <font>
+               <Font size="50.0" />
+            </font>
+         </Label>
+         </children>
+   </Pane>
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+</GridPane>
